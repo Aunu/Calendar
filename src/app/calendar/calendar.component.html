@@ -1,0 +1,6 @@
+<h3>
+  The UTC time format in the calendar.
+</h3>
+
+<p-calendar [(ngModel)]="value" monthNavigator=true yearNavigator=true dataType='string' yearRange='2000:2090' dateFormat='dd-M-yy' (onBlur)="onDateBlur($event)" required=true ></p-calendar>
+<span>{{ value }}</span>
